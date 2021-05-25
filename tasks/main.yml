@@ -1,0 +1,10 @@
+---
+# tasks file for podman
+- name: Installing PodMan
+  become: yes
+  block:
+  - name: Installing pakages
+    package:
+      name: podman
+      state: latest
+
